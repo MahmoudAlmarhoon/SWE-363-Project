@@ -22,7 +22,13 @@ app.use(bodyParser.urlencoded({
     extended:true
 }))
  
-mongoose.connect(`mongodb+srv://Mahmoud:CEybvT5izlY5Eq2Z@databaseswe.hcagrze.mongodb.net/?retryWrites=true&w=majority&appName=DatabaseSWE`)
+mongoose.connect(`mongodb+srv://Mahmoud:CEybvT5izlY5Eq2Z@databaseswe.hcagrze.mongodb.net/?retryWrites=true&w=majority&appName=DatabaseSWE`,{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 1000000, // Increase timeout to 10 seconds
+    socketTimeoutMS: 450000, // Increase socket timeout to 45 seconds
+  
+})
 .then(() =>{
     console.log("succefuuly to DB")
 
