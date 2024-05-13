@@ -22,7 +22,13 @@ app.use(bodyParser.urlencoded({
     extended:true
 }))
  
-mongoose.connect('mongodb://localhost:27017/DatabaseSWE')
+mongoose.connect(`mongodb+srv://Mahmoud:CEybvT5izlY5Eq2Z@databaseswe.hcagrze.mongodb.net/?retryWrites=true&w=majority&appName=DatabaseSWE`)
+.then(() =>{
+    console.log("succefuuly to DB")
+
+}).catch((error) =>{
+    console.log(error)
+})
 var db=mongoose.connection
  
 db.on('error',()=>console.log("Eroor in connection to Database"))
