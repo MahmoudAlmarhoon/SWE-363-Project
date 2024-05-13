@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="max-w-[1440px] flex justify-between items-center mx-auto py-5  border-gray-200 border"
+    >
+      <nav class="w-[80%] md:w-[20%] flex justify-center md:items-center">
+        <a href="">
+          <span class="text-xl text-lime-700 mr-10">KFUPM Exchange Hub</span>
+        </a>
+      </nav>
+      <div class="md:w-[80%] hidden md:flex justify-between items-center">
+        <ul class="flex gap-2">
+          <li>
+            <a
+              href="MainSell.html"
+              class="px-7 py-1 bg-gray-400 rounded-full text-sm text-white"
+              >Sells</a
+            >
+          </li>
+          <li>
+            <a
+              href="MainFree.html"
+              class="px-7 py-1 bg-gray-400 rounded-full text-sm text-white"
+              >Free</a
+            >
+          </li>
+          <li>
+            <a
+              href="MainMazad.html"
+              class="px-7 py-1 bg-gray-400 rounded-full text-sm text-white"
+              >Mazad</a
+            >
+          </li>
+        </ul>
+        <div class="flex items-center justify-right gap-3">
+          <a
+            href=""
+            class="flex items-center text-white bg-gray-700 px-7 py-1 rounded-full text-sm"
+            ><ion-icon name="add-outline"></ion-icon>Add Item</a
+          >
+          <a
+            href="login.html"
+            class="flex items-center text-white bg-lime-700 px-7 py-1 rounded-full text-sm"
+            >Login</a
+          >
+          <a href="" class="flex items-center text-gray-700 text-xl"
+            ><ion-icon name="person-outline"></ion-icon
+          ></a>
+          <a href="cart.html" class="flex items-center text-gray-700 text-xl"
+            ><ion-icon name="cart-outline"></ion-icon
+          ></a>
+        </div>
+      </div>
+      <ion-icon name="menu-outline" class="w-[20%] block md:hidden"></ion-icon>
+    </header>
+    <main>
+      <div class="container max-w-[50%] mx-auto text-center py-8">
+        <img src="img/done.png" alt="" class="mx-auto w-48 h-48 mb-5" />
+        <p class="font-normal text-xl mb-5">Your order is done successfuly!</p>
+        <p class="font-normal text-xl mb-5">
+          Your order number is [Order_Number]. Please keep this number for your
+          records. A confirmation email has been sent to [Email_Address]. You
+          can track your order's shipping status in your account under 'My
+          Orders.'
+        </p>
+        <a href="" class="inline-block bg-green-400 text-white px-8 py-2 rounded-full">Return Home</a>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

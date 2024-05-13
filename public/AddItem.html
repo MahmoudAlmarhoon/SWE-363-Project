@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add item</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+ <!-- Header Section -->
+ <header class="max-w-[1440px] flex justify-between items-center mx-auto py-5 border-gray-200 border-b">
+ <nav class="w-[80%] md:w-[20%] flex justify-center md:items-center">
+   <a href="/SWE-363-Project-main/public/MainSell.html">
+     <span class="text-xl text-lime-700 mr-10 font-bold">KFUPM Exchange Hub</span>
+   </a>
+ </nav>
+ <div class="md:w-[80%] hidden md:flex justify-between items-center">
+   <ul class="flex gap-2">
+     <li>
+       <a href="/SWE-363-Project-main/public/MainSell.html" class="px-7 py-1 transition-color hover:text-white hover:bg-gray-700 bg-gray-400 text-white rounded-xl">Sells</a>
+     </li>
+     <li>
+       <a href="MainFree.html" class="px-7 py-1 transition-color hover:text-white hover:bg-gray-700 bg-gray-400 text-white rounded-xl">Free</a>
+     </li>
+     <li>
+       <a href="MainMazad.html" class="px-7 py-1 transition-color hover:text-white hover:bg-gray-700 bg-gray-400 text-white rounded-xl">Mazad</a>
+     </li>
+   </ul>
+   <div class="flex items-center justify-right gap-3">
+     <a href="/AddItem.html" class="flex items-center text-white bg-gray-700 px-7 py-1 rounded-full text-sm transition-color hover:text-black hover:bg-gray-400">Add Item</a>
+     <a
+     href="login.html"
+     id="loginLink"
+     class="flex items-center text-white bg-lime-700 px-7 py-1 rounded-full text-sm transition-color hover:bg-lime-800 bg-lime-700 text-white"
+     >Login</a
+   >     <a href="/Profile.html" class="flex items-center text-gray-700 text-xl transition-color hover:text-lime-700"><ion-icon name="person-outline"></ion-icon></a>
+     <a href="cart.html" class="flex items-center text-gray-700 text-xl transition-color hover:text-lime-700"><ion-icon name="cart-outline"></ion-icon></a>
+   </div>
+ </div>
+ <ion-icon name="menu-outline" class="w-[20%] block md:hidden"></ion-icon>
+</header>
+<!-- End Header Section-->
+<body class="bg-gray-100">
+  <div class="container mx-auto p-5">
+      <h1 class="text-xl font-bold mb-5">Add item</h1>
+      <form action="/AddItem.html" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="mb-4">
+              <div class="flex justify-center items-center w-full">
+                  <label class="block w-full bg-gray-200 text-center py-3 cursor-pointer">
+                      Add main photo
+                      <input type="file" class="hidden" id="bigPicture" name="bigPicture">
+                  </label>
+              </div>
+              <div class="flex mt-4">
+                  <label class="flex-1 bg-gray-200 text-center py-2 mr-2 cursor-pointer">
+                      Add side photo
+                      <input type="file" class="hidden" id="sidePic1" name="sidePic1">
+                  </label>
+                  <label class="flex-1 bg-gray-200 text-center py-2 mr-2 cursor-pointer">
+                      Add side photo
+                      <input type="file" class="hidden" id="sidePic2" name="sidePic2">
+                  </label>
+                  <label class="flex-1 bg-gray-200 text-center py-2 cursor-pointer">
+                      Add side photo
+                      <input type="file" class="hidden" id="sidePic3" name="sidePic3">
+                  </label>
+              </div>
+          </div>
+          <div class="mb-4">
+              <label class="text-gray-700">Item Type:</label>
+              <div class="mt-2">
+                  <label class="inline-flex items-center">
+                      <input type="radio" class="form-radio" name="itemType" value="Sell">
+                      <span class="ml-2">Sell</span>
+                  </label>
+                  <label class="inline-flex items-center ml-6">
+                      <input type="radio" class="form-radio" name="itemType" value="Free">
+                      <span class="ml-2">Free</span>
+                  </label>
+                  <label class="inline-flex items-center ml-6">
+                      <input type="radio" class="form-radio" name="itemType" value="Mazad">
+                      <span class="ml-2">Mazad</span>
+                  </label>
+              </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+              <label class="block text-gray-700">product Name</label>
+              <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" id="productName" name="productName">
+            </div>
+              <div>
+                  <label class="block text-gray-700">Price</label>
+                  <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" id="price" name="price">
+              </div>
+              <div>
+                  <label class="block text-gray-700">Quantity</label>
+                  <input type="number" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" name="quantity" id="quantity">
+              </div>
+          </div>
+          <div class="mb-4">
+              <label class="block text-gray-700">Description</label>
+              <textarea class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" name="description" id="description"></textarea>
+          </div>
+          <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              Add Item
+          </button>
+      </form>
+  </div>
+  <script>
+    function previewMainPhoto(event) {
+      const mainPhoto = document.querySelector('.main-photo');
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function() {
+          mainPhoto.style.backgroundImage = `url(${reader.result})`;
+        }
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function previewSidePhoto(event, number) {
+      const sidePhoto = document.querySelector(`#side-photo-${number}`);
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function() {
+          sidePhoto.style.backgroundImage = `url(${reader.result})`;
+        }
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const loginLink = document.getElementById('loginLink');
+      if (loginLink) {
+          loginLink.remove(); // Remove the login button from the DOM
+      }
+  });
+</script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KFUPM Exchange Hub</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen">
+   <div
+   class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
+   style="background-image: url('img/background2.png'); height: 100px">
+   
+     <div class="flex h-full items-center justify-left">
+       <div class="text-white">
+         <h2 class="mb-4 text-3xl font-semibold bg-white-000">KFUPM Exchange Hub</h2>         
+       </div>
+     </div>
+   </div>
+ </div>
+   <div class="flex flex-col justify-between h-full">
+    <div class="max-w-4xl, max-w-fit p-8 bg-white shadow-md">
+      <h2 class="text-2xl mb-4">Create an account</h2>
+      <form action="/Register" method="POST" class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full md:w-1/2 px-3 mb-6">
+       
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="Fname">
+          First name
+        </label>
+        <input class="appearance-none block w-full bg-white-200 text-gray-700 border 
+        border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="Fname" name="Fname" type="text" placeholder="" required/>
+      </div>
+      <div class="w-full md:w-1/2 px-3">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="Lname" >
+          Last name
+        </label>
+        <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 
+        leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="Lname" name="Lname" type="text" placeholder="" required/>
+      </div>
+      <div class="w-full md:w-1/2 px-3 mb-6">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+          Email
+        </label>
+        <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 
+        leading-tight focus:outline-none focus:bg-white" id="email" type="email" name="email" placeholder="" required/>
+      </div>
+      <div class="w-full md:w-1/2 px-3 mb-6">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="mobile">
+          Mobile number
+        </label>
+        <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 
+        leading-tight focus:outline-none focus:bg-white" id="mobile" name="mobile" type="text"  placeholder="" required/>
+      </div>
+      <div class="w-full md:w-1/2 px-3 mb-6">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="password">
+          Password
+        </label>
+        <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 
+        leading-tight focus:outline-none focus:bg-white" id="password" name="password" type="password" placeholder="" required/>
+      </div>
+      <div class="w-full md:w-1/2 px-3 mb-6">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="Cpassword">
+          Confirm Password
+        </label>
+        <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 
+        leading-tight focus:outline-none focus:bg-white" id="Cpassword" name="Cpassword" type="password" placeholder="" required/>
+      </div>
+      <div class="w-full md:w-1/2 px-3 mb-6">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="id">
+          ID number
+        </label>
+        <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 
+        leading-tight focus:outline-none focus:bg-white" id="id" name="id" type="text" placeholder="" required/>
+      </div>
+      <div class="w-full md:w-1/2 px-3">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="building">
+          Building number
+        </label>
+        <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 
+        leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="building" name="building" type="text" placeholder="" required/>
+      </div>
+      <div class="w-full px-3">
+        <label class="flex items-center">
+          <input class="mr-2 leading-tight" type="checkbox">
+          <span class="text-sm text-gray-700">By creating an account, I agree to the <a href="#" 
+            class="text-blue-500">Terms of use</a> and <a href="#" class="text-blue-500">Privacy Policy</a></span>
+        </label>
+      </div>
+      <div class="w-full px-3">
+        <button class="w-full sm:w-auto transition-color hover:bg-lime-800 bg-lime-700 text-white font-bold py-2 px-4 
+        rounded focus:outline-none focus:shadow-outline" type="submit" value="Submit" id="submit">
+          Create an account
+        </button>
+      </div>
+      <div class="w-full px-3 text-right">
+        <a href="login.html" class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
+          log in instead
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- <script src="script.js"></script> -->
+</body>
+</html>

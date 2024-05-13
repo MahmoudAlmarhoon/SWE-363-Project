@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazad Item Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="MazadJS.js"></script>
+    <link rel="stylesheet" href="ItemDetailsStyle.css">
+    <link rel="stylesheet" href="MazadDetails.css">
+</head>
+<body>
+     <!-- Header Section -->
+     <header
+     class="max-w-[1440px] flex justify-between items-center mx-auto py-5 border-gray-200 border-b"
+   >
+     <nav class="w-[80%] md:w-[20%] flex justify-center md:items-center">
+       <a href="/MainSell.html">
+         <span class="text-xl text-lime-700 mr-10 font-bold">KFUPM Exchange Hub</span>
+       </a>
+     </nav>
+     <div class="md:w-[80%] hidden md:flex justify-between items-center">
+       <ul class="flex gap-2">
+         <li>
+           <a
+             href="MainSell.html"
+             class="px-7 py-1 transition-color hover:text-white hover:bg-gray-700 bg-gray-400 text-white rounded-xl"
+             >Sells</a
+           >
+         </li>
+         <li>
+           <a
+             href="MainFree.html"
+             class="px-7 py-1 transition-color hover:text-white hover:bg-gray-700 bg-gray-400 text-white rounded-xl"
+             >Free</a
+           >
+         </li>
+         <li>
+           <a
+             href="MainMazad.html"
+             class="px-7 py-1 transition-color hover:text-white hover:bg-gray-700 bg-gray-700 text-white rounded-xl"
+             >Mazad</a
+           >
+         </li>
+       </ul>
+       <div class="flex items-center justify-right gap-3">
+         <a
+           href="/AddItem.html"
+           class="flex items-center text-white bg-gray-700 px-7 py-1 rounded-full text-sm transition-color hover:text-black hover:bg-gray-400 bg-gray-700"
+           ><ion-icon name="add-outline"></ion-icon>Add Item</a
+         >
+         <a
+           href="login.html"
+           class="flex items-center text-white bg-lime-700 px-7 py-1 rounded-full text-sm transition-color hover:bg-lime-800 bg-lime-700 text-white"
+           >Login</a
+         >
+         <a href="/Profile.html" class="flex items-center text-gray-700 text-xl transition-color hover:text-lime-700"
+           ><ion-icon name="person-outline"></ion-icon
+         ></a>
+         <a href="cart.html" class="flex items-center text-gray-700 text-xl transition-color hover:text-lime-700"
+           ><ion-icon name="cart-outline"></ion-icon
+         ></a>
+       </div>
+     </div>
+     <ion-icon name="menu-outline" class="w-[20%] block md:hidden"></ion-icon>
+   </header>
+   <!-- End Header Section-->
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Item Details -->
+    <section id="ItemsLayOut">
+            <!-- Small Pictures -->
+    <Section id="SmallPicSection">
+        <div class="smallImageBox">
+           <img src="https://dlcdnwebimgs.asus.com/gain/479f891b-3bb6-4c7f-b8e1-c6bfa51f3f25/" alt="" class="SmallImage">
+          </div>
+        <div class="smallImageBox"> 
+          <img src="https://m.media-amazon.com/images/I/81Q-FwBZyYL._AC_SL1500_.jpg" alt="" class="SmallImage">
+        </div>
+        <div class="smallImageBox"> 
+          <img src="https://static.wixstatic.com/media/131a7a_e9e07189582f4881bb3caf519a34e8e2~mv2.png/v1/fill/w_999,h_754,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/131a7a_e9e07189582f4881bb3caf519a34e8e2~mv2.png" alt="" class="SmallImage">
+        </div>
+        <div class="smallImageBox"> 
+          <img src="https://microless.com/cdn/products/2ed47beb04680eaf4ef1f3914af6478a-hi.jpg" alt="" class="SmallImage">
+        </div>
+    </Section>
+
+    <!-- Big Picture -->
+    <section id="BigPictureSection">
+        <img src="https://dlcdnwebimgs.asus.com/gain/479f891b-3bb6-4c7f-b8e1-c6bfa51f3f25/" alt="" id="BigPicture">
+    </section>
+
+    <!-- Item Info -->
+    <section id="ItemDetailsSection">
+        <h1 class="MainText">Asus FHD Gaming Laptop</h1>
+        <p class="DetailsPar"><b>Starting From: </b>700SR</p>
+        <h1 class="MainText">About this item</h1>
+        <p class="detailsPar">this is a gaming laptop from ASUS it has a great CPU (I9) and it have a 32 GB RAM 
+            and 1 TB SSD you can use it in: editing, programing, gaming and learning</p>
+    </section>
+
+    </section>
+
+    <section id="MazadContainer">
+    <!-- Mazad Timer Section -->
+    <section class="container">
+        <h1 id="headline">Mazad ends after: </h1>
+        <div id="countdown">
+            <ul>
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Submit Mazad Bid -->
+    <section id="SybmitMazadSection">
+        <p id="FormText">For biding, please enter the price then press the button</p>
+        <forrm id="SubmitMazadForm">
+            <input type="text"  placeholder="Enter the price..." id="inputText">
+            <button type="button" id="inputBtn">Submit Request</button>
+        </form>
+        <p><b>Last Price is: </b>770SR</p>
+        <p><b>Last Bider is: </b>Mahmoud Almarhoon</p>
+
+    </section>
+
+    </section>
+</body>
+</html>

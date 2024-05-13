@@ -1,0 +1,110 @@
+.main-photo {
+      width: 300px; /* Adjusted width */
+      height: 400px; /* Adjusted height */
+      margin-left: 20px; /* Shifted to the left */
+      background-size: cover;
+      background-position: center;
+    }
+    .side-photo {
+      width: 100px; /* Adjusted width */
+      height: 100px; /* Adjusted height */
+      margin-left: 20px; /* Shifted to the left */
+      background-size: cover;
+      background-position: center;
+    }
+    .add-item-title {
+      font-size: 2.0rem; /* Bigger font size */
+      margin-left: 0px; /* Shifted to the left */
+    }
+    .bottom-rectangle {
+      width: 300px; /* Adjusted width */
+      height: 150px; /* Adjusted height */
+      margin-left: 20px; /* Shifted to the left */
+      margin-top: 20px; /* Added margin */
+      background-color: #e0e0e0; /* Light gray background */
+      border-radius: 10px; /* Rounded corners */
+      padding: 20px; /* Added padding */
+    }
+    .add-item-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .item-type-container {
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Added padding */
+    width: 100%; /* Same width as the parent container */
+    }
+    .item-type {
+    font-size: 1.5rem; /* Bigger font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Added margin */
+    }
+    .name-container {
+    padding: 5px; /* Added padding */
+    width: 100%; /* Same width as the parent container */
+    margin-top: 5px; /* Added margin */
+    }
+    .name-title {
+      font-size: 1.2rem; /* Adjusted font size */
+      font-weight: bold; /* Bold font weight */
+    }
+    .name-input {
+      width: 100%; /* Same width as item type container */
+      padding: 8px; /* Added padding */
+      margin-top: 8px; /* Added margin */
+      border: 1px solid #ccc; /* Added border */
+      border-radius: 5px; /* Added border radius */
+    }
+   .price-container {
+    padding: 5px; /* Added padding */
+    width: 100%; /* Same width as the parent container */
+    margin-top: 5px; /* Added margin */
+    }
+    .price-title {
+      font-size: 1.2rem; /* Adjusted font size */
+      font-weight: bold; /* Bold font weight */
+    }
+    .price-input {
+      width: 100%; /* Same width as item type container */
+      padding: 8px; /* Added padding */
+      margin-top: 8px; /* Added margin */
+      border: 1px solid #ccc; /* Added border */
+      border-radius: 5px; /* Added border radius */
+    }
+    .quantity-container {
+      padding: 5px; /* Added padding */
+      width: 100%; /* Same width as the parent container */
+      margin-top: 5px; /* Added margin */
+    }
+    .quantity-title {
+      font-size: 1.2rem; /* Adjusted font size */
+      font-weight: bold; /* Bold font weight */
+    }
+    .quantity-input {
+      width: 100%; /* Same width as item type container */
+      padding: 8px; /* Added padding */
+      margin-top: 8px; /* Added margin */
+      border: 1px solid #ccc; /* Added border */
+      border-radius: 5px; /* Added border radius */
+    }
+    .description-container {
+      padding: 5px; /* Added padding */
+      width: 100%; /* Same width as the parent container */
+      margin-top: 5px; /* Added margin */
+    }
+    .description-title {
+      font-size: 1.2rem; /* Adjusted font size */
+      font-weight: bold; /* Bold font weight */
+    }
+    .description-input {
+      width: 100%; /* Same width as item type container */
+      padding: 8px; /* Added padding */
+      margin-top: 8px; /* Added margin */
+      border: 1px solid #ccc; /* Added border */
+      border-radius: 5px; /* Added border radius */
+      resize: vertical; /* Allow vertical resizing */
+      min-height: 100px; /* Set minimum height */
+    }

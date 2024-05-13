@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Main layout structure */
+.main-container {
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh; /* Ensure it takes at least the viewport height */
+  }
+  
+  /* Exchange Hub container which contains the background image and additional content */
+  .exchange-hub-container {
+    flex-basis: 50%; /* Takes up half the width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text alignment for all child elements */
+    position: relative;
+    overflow: hidden;
+    color: white; /* Assuming white text for the content */
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .title-container {
+    color: #fff; /* Or the appropriate color based on your design */
+    text-align: center;
+    position: relative;
+    font-size: 40px; /* Adjust font-size to match your design */
+    font-weight: 700; /* Adjust font-weight as needed */
+    margin-top: 32px; /* Or appropriate value to match the design */
+    letter-spacing: normal; /* Adjust as needed, or remove if not required */
+    z-index: 2;
+    margin-bottom: 0.5rem; /* Reduce the bottom margin if the space is too much */
+
+  }
+  
+.tagline,
+.icons-container {
+  z-index: 1; /* Ensure they lay on top of the absolute positioned image */
+  padding: 0 20px; /* Padding to ensure content doesn't touch the edges */
+}
+
+ 
+  .separator-line {
+    height: 2px;
+    width: 80%;
+    background: #fff;
+    margin: 20px 0;
+  }
+  
+  .icons-container {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 20px; /* Adjust gap as needed */
+    margin-bottom: 2rem; /* Increase bottom margin if you want more space below */
+    /* Add padding-top if you want to push the icons down */
+    padding-top: 1rem;
+  }
+  
+  .icon {
+    width: 69px; /* Adjust as needed */
+    height: auto; /* To maintain aspect ratio without stretching */
+    display: block; /* This ensures the element respects width and height */
+
+  }
+  
+  .login-container {
+    flex-basis: 50%; /* Takes up the other half of the width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 37px; /* Add padding on the left and right */
+  }
+  
+  .login-heading {
+    color: #333;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 568px;
+  }
+  
+  .login-label,
+  .password-label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  
+  .login-input,
+  .password-input {
+    border-radius: 12px;
+    border: 1px solid rgba(102, 102, 102, 1);
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .password-forgot {
+    color: #111;
+    text-decoration: underline;
+    align-self: flex-end;
+    margin-bottom: 24px;
+    cursor: pointer;
+  }
+  
+  .login-button,
+  .signup-button {
+    border-radius: 32px;
+    padding: 16px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(0, 133, 64, 0.6);
+    cursor: pointer;
+    margin-bottom: 16px;
+    border: none;
+    text-align: center;
+  }
+  
+  .divider-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .divider-line {
+    background-color: rgba(102, 102, 102, 0.25);
+    height: 2px;
+    flex-grow: 1;
+  }
+  
+  .signup-prompt {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .signup-button {
+    border: 1px solid rgba(17, 17, 17, 1);
+    background-color: transparent;
+    text-decoration: none; /* Removes underline from link */
+
+    color: #111;
+    padding: 16px;
+  }
+  .button:hover, .button:focus {
+    background-color: #006837; /* Slightly darker green on hover/focus for feedback */
+}
+  
+  /* Adjustments for better centering and responsive behavior */
+@media (min-width: 992px) {
+    .login-container,
+    .exchange-hub-container {
+      padding: 0 80px; /* More padding for larger screens */
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .main-container {
+      flex-direction: column;
+    }
+  
+    .exchange-hub-container,
+    .login-container {
+      flex-basis: auto;
+      width: 100%;
+    }
+  
+    .background-image {
+      height: 50vh; /* Take up half the viewport height */
+    }
+  }
+  

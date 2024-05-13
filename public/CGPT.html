@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item - KFUPM Exchange Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-5">
+        <h1 class="text-xl font-bold mb-5">Add item</h1>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="mb-4">
+                <div class="flex justify-center items-center w-full">
+                    <label class="block w-full bg-gray-200 text-center py-3 cursor-pointer">
+                        Add main photo
+                        <input type="file" class="hidden">
+                    </label>
+                </div>
+                <div class="flex mt-4">
+                    <label class="flex-1 bg-gray-200 text-center py-2 mr-2 cursor-pointer">
+                        Add side photo
+                        <input type="file" class="hidden">
+                    </label>
+                    <label class="flex-1 bg-gray-200 text-center py-2 mr-2 cursor-pointer">
+                        Add side photo
+                        <input type="file" class="hidden">
+                    </label>
+                    <label class="flex-1 bg-gray-200 text-center py-2 cursor-pointer">
+                        Add side photo
+                        <input type="file" class="hidden">
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="text-gray-700">Item Type:</label>
+                <div class="mt-2">
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio" name="itemType" value="Sell">
+                        <span class="ml-2">Sell</span>
+                    </label>
+                    <label class="inline-flex items-center ml-6">
+                        <input type="radio" class="form-radio" name="itemType" value="Free">
+                        <span class="ml-2">Free</span>
+                    </label>
+                    <label class="inline-flex items-center ml-6">
+                        <input type="radio" class="form-radio" name="itemType" value="Mazad">
+                        <span class="ml-2">Mazad</span>
+                    </label>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-gray-700">Price</label>
+                    <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
+                </div>
+                <div>
+                    <label class="block text-gray-700">Quantity</label>
+                    <input type="number" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Description</label>
+                <textarea class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"></textarea>
+            </div>
+            <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                Add Item
+            </button>
+        </div>
+    </div>
+</body>
+</html>

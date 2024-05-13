@@ -1,0 +1,76 @@
+.container {
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+    
+h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    }
+
+li {
+    display: inline-block;
+    font-size: 1em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    }
+    
+li span {
+    display: block;
+    font-size: 2rem;
+    }
+
+@media all and (max-width: 768px) {
+    h1 {
+    font-size: calc(1.5rem * var(--smaller));
+    }
+    li {
+    font-size: calc(1.125rem * var(--smaller));
+    }
+    li span {
+    font-size: calc(3.375rem * var(--smaller));
+    }
+}
+#SybmitMazadSection{
+    margin-left: 40px;
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 30px; 
+}
+#SubmitMazadForm{
+    display: grid;
+}
+#inputText{
+    border-width: 1px;
+    border-color:#888;
+    border-style: solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#inputBtn{
+    border-width: 0px;
+    border-radius: 10px;
+    background-color: #008540;
+    color: white;
+    margin-bottom: 10px;
+}
+#FormText{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#MazadContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+    

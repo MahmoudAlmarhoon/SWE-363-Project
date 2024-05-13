@@ -1,0 +1,79 @@
+#ItemsLayOut{
+    display: grid;
+    grid-template-columns: 1fr 10fr 10fr ;
+    align-items: center;
+    justify-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+#SmallPicSection{
+
+}
+.SmallImage{
+    border-radius: 15px;
+    border: solid;
+    border-width: 1px;
+    padding: 3px;
+    
+}
+.smallImageBox{
+    height: 105px;
+    width: 82px;
+}
+
+#BigPictureSection{
+
+}
+#BigPicture{
+height: 300px;
+
+}
+#ItemDetailsSection{
+
+}
+.MainText{
+font-style: italic;
+font-weight: bold;
+border-bottom-width: 1px;
+border-color: black;
+margin-bottom: 5px;
+}
+.DetailsPar{
+    margin-bottom: 30px;
+}
+#AddToCartSection{
+    text-align: center;
+    margin-left: 40px;
+    width: 300px;
+    height: 130px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px; 
+
+}
+
+#AddToCartForm{
+    border-width: 0px;
+    border-radius: 10px;
+    background-color: #008540;
+    color: white;
+ 
+}
+#Btn{
+    text-align: center;
+    font-size: small;    
+
+}
+.addToCartText{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    border-bottom-width: 1px;
+    border-color: black;
+    margin-bottom: 30px;
+
+
+}
