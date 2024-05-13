@@ -257,16 +257,13 @@ app.get("/AddItem",(req,res)=>{
 
 // Route for the root path (/)
 app.get("/", (req, res) => {
-    res.redirect("/MainSell.html");
+    res.redirect("login.html")
 });
 
-app.get("/",(req,res)=>{
-    res.status({
-        "Allow-acces-Allow-origin":"*"
-    })
- 
-    return res.redirect("login.html")
-})
+app.get('/login', (req, res) => {
+    res.send('<h1>Login Page</h1><p>This is the login page content.</p>');
+  });
+  
 
 
 // Existing routes...
