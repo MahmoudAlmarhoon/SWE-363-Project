@@ -260,6 +260,15 @@ app.get("/", (req, res) => {
     res.redirect("/MainSell.html");
 });
 
+app.get("/",(req,res)=>{
+    res.status({
+        "Allow-acces-Allow-origin":"*"
+    })
+ 
+    return res.redirect("login.html")
+})
+
+
 // Existing routes...
 
 
